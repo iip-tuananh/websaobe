@@ -1,0 +1,40 @@
+<script>
+    class Partner extends BaseClass {
+        no_set = [];
+        statuses = @json(\App\Model\Admin\Partner::STATUSES);
+
+        before(form) {
+            this.image = {};
+        }
+
+        after(form) {
+
+        }
+
+        // Ảnh đại diện
+        get image() {
+            return this._image;
+        }
+
+        set image(value) {
+            this._image = new Image(value, this);
+        }
+
+        clearImage() {
+            if (this.image) this.image.clear();
+        }
+
+        get submit_data() {
+            let data = {
+                title: this.title,
+                link_youtube: this.link_youtube,
+            }
+            data = jsonToFormData(data);
+
+            let image = this.image.submit_data;
+            if (image) data.append('image', image);
+
+            return data;
+        }
+    }
+</script>

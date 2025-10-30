@@ -1,0 +1,637 @@
+@font-face {
+	font-family: 'SVN-Merge';
+	src: url('../fonts/SVN-Merge%20Bold.eot');
+	src: local('☺'), url('../fonts/SVN-Merge%20Bold.woff') format('woff'), url('../fonts/SVN-Merge%20Bold.ttf') format('truetype'), url('../fonts/SVN-Merge%20Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SVN-Merge';
+	src: url('../fonts/SVN-Merge%20Regular.eot');
+	src: local('☺'), url('../fonts/SVN-Merge%20Regular.woff') format('woff'), url('../fonts/SVN-Merge%20Regular.ttf') format('truetype'), url('../fonts/SVN-Merge%20Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#button-incret span
+{
+	background:#294a8e;
+	height: 46px;
+	width: 32px;
+	color:#FFF;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 50px;
+	cursor: pointer;
+}
+#slider_product .uk-position-small
+{
+	top:20%;
+}
+#slider_product li.product
+{
+	padding-bottom: 0;
+}
+#button-incret span:first-child
+{
+	padding:0 5px;
+	border-radius: 50px 0 0 50px;
+}
+.shipping_method
+{
+	display: none;
+}
+#button-incret span:last-child
+{
+	padding:0 5px;
+	border-radius: 0 50px  50px  0;
+}
+#button-incret .uk-input
+{
+	background:#294a8e;
+	height: 46px;
+	color:#FFF;
+	border: none;
+	text-align: center;
+	width: 40px;
+}
+.tm-header-mobile .uk-nav > .menu-item
+{
+	position: relative;
+	border-bottom: 1px solid #FFF;
+	padding:0 62px;
+	padding-right: 20px;
+}
+#tm-dialog-mobile
+{
+	padding:0;
+}
+.ju-scroll
+{
+	position: absolute;
+	right:0px;
+	top:17px;
+	transform: translateY(-50%);
+	padding: 12px 20px!important;
+	background:#1f60a5;
+}
+.ju-scroll + div
+{
+	padding: 5px 0;
+}
+.ju-scroll + div > a
+{
+	color:#FFF;
+}
+.uk-active .ju-scroll + div > a
+{
+	color:#ffd900;
+}
+.soluong::-webkit-outer-spin-button,.soluong::-webkit-inner-spin-button
+{
+	/* opacity: 1;
+	-webkit-appearance:unset; */
+}
+#button-incret .uk-input::-webkit-outer-spin-button,
+#button-incret .uk-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#giohang .uk-input:-webkit-outer-spin-button
+{
+	/* -webkit-appearance:unset;
+	opacity: 1; */
+}
+#table_form thead th
+{
+	font-size: 18px;
+	font-weight: bold;
+	color:#294a8e;
+		
+}
+.term-list>:nth-child(n+2)
+{
+	margin-top: 0;
+}
+.term-list li > a
+{
+	/* font-size: 20px; */
+	color:#294a8e;
+}
+.term-list.uk-grid-collapse
+{
+	margin-left: 15px;
+}
+#button-list .uk-button-secondary
+{
+	background: #ed9718 !important;
+}
+.term-list.uk-grid-collapse>.uk-grid-margin
+{
+	margin-top: 15px;
+	
+}
+.term_location
+{
+	font-size: 28px;
+	font-weight: bold;
+	color:#294a8e
+}
+.h3-content
+{
+	font-size:27px ;
+	font-weight: bold;
+	color:#294a8e;
+}
+.tinhthanh
+{
+	background:#2b5095;
+	color:#FFF;
+	font-size: 23px;
+	font-weight: bold;
+}
+.tinhthanhselect
+{
+	color:#2b5095;
+	font-size: 20px;
+	line-height: 50px;
+	height: 50px !important;
+}
+.term-list.uk-list-disc>::before
+{
+	left: -20px;
+	color:#f6abb4;
+	margin-bottom: -1.8em;
+}
+.table-tinhthanh ,.table-tinhthanh td,.table-tinhthanh tr
+{
+	border:1px solid #000;
+}
+.js-filter
+{
+	display: none;
+}
+.js-filter.uk-active
+{
+	display: table-row-group;
+}
+#table_form  .uk-input
+{
+	width: 60px;
+	line-height: 35px;
+	height:35px;
+	padding-right: 0;
+}
+#table_form tbody
+{
+	background:#cdecfa;
+	border-radius: 10px;
+}
+#datmua
+{
+	background:#e0790d;
+	border-radius: 10px;
+}
+#table_form tbody th ,#table_form tfoot
+{
+	font-size: 18px;
+	color:#294a8e;
+	text-transform: none;
+}
+#table_form tbody th:last-child
+{
+	font-weight:bold;
+	font-size: 21px;
+	color:#e0790d;
+}
+#table_form tfoot
+{
+	background:#cdecfa;
+	border-radius: 10px;
+}
+#table_form td,#table_form th
+{
+	padding:10px  12px !important;
+}
+.tong
+{
+	font-size: 21px;
+	font-weight: bold;
+	color:#e0790d;
+}
+.tong + span
+{
+	font-weight: bold;
+	color:#e0790d;
+}
+#view_cart
+{
+	position: fixed;
+	left: 20px;
+	top:50%;
+	transform: translateY(-50%);
+	width: 40px;
+}
+
+#view_cart >.uk-grid  div a
+{
+	background:#294a8e;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	padding:10px;
+	box-sizing: border-box;
+}
+#dathang thead
+{
+	font-size: 20px;
+	font-weight: bold;
+	color:#294a8e;
+}
+#dathang tbody .title
+{
+	color:#294a8e;
+	font-size: 20px;
+}
+#dathang tbody .gia
+{
+	font-weight: bold;
+	font-size: 20px;
+	color:#e0790d;
+}
+#dathang tbody .uk-input
+{
+	width:60px;
+	font-size: 20px;
+	border: 2px solid #294a8e;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 0;
+	
+}
+#billing_phone_field
+{
+	width: calc(50% - (40px / 2));
+	float:right;
+	clear: none;
+}
+#dathang tbody .thanhtien
+{
+	font-weight: bold;
+    font-size: 20px;
+    color: #e0790d;
+}
+.minus
+{
+	height:40px;
+	border-radius: 20px 0 0 20px;
+	width: 32px;
+	background:#294a8e;
+	color:#FFF;
+	border:none;
+	padding-left: 12px;
+	cursor: pointer;
+}
+.plus
+{
+	height:40px;
+	border-radius:  0 20px 20px 0 ;
+	width: 32px;
+	background:#294a8e;
+	color:#FFF;
+	border:none;
+	padding-right: 12px;
+	cursor: pointer;
+}
+#dathang tfoot
+{
+	background:#cdecfa;
+	font-size: 20px;
+	color:#294a8e;
+	border-radius: 5px;
+}
+.tm-element-woo-add-to-cart .quantity .input-text::-webkit-outer-spin-button, .tm-element-woo-add-to-cart .quantity .input-text::-webkit-inner-spin-button
+{
+	-webkit-appearance: none;
+	margin: 0;
+	opacity: 0;
+	
+}
+.tm-element-woo-add-to-cart .quantity .input-text 
+{
+	text-align: center;
+	width:63px !important;
+	background:#294a8e;
+	color:#FFF;
+	border:none;
+}
+#dathang tfoot .tong
+{
+	font-size: 26px;
+}
+
+#giohang thead
+{
+	font-size: 30px;
+	font-weight: bold;
+	color:#294a8e;
+}
+.single-product div.product form.cart .quantity {
+    float: none;
+    margin: 0;
+    display: inline-block;
+}
+#giohang tbody
+{
+	font-size: 27px;
+	color:#294a8e;
+}
+#giohang input
+{
+	width: 88px;
+	border:1px solid  #294a8e;
+	border-radius: 5px;
+}
+#giohang tfoot
+{
+	font-size: 27px;
+	color:#294a8e;
+}
+#giohang tbody td:nth-child(2),#giohang tbody td:last-child
+{
+	color:#e0790d;
+	font-weight: bold;
+}
+ul.products>* .price
+{
+	font-size: 36px;
+    color: #ed9717;
+	font-weight: bold;
+}
+ul.products>*  h2.woocommerce-loop-product__title
+{
+	font-size: 20px;
+	color: #24558f!important;
+	font-weight: bold;
+}
+#button-cart .uk-button
+{
+	border-radius: 50px !important;
+}
+#button-cart .product_type_simple
+{
+	border-radius: 50px !important;
+	background:#24558f;
+	color:#FFF;
+	padding:0 10px;
+}
+.ju-expert
+	{
+		text-align: justify;
+		font-size: 20px;
+
+	}
+	.gia
+	{
+		font-size: 20px;
+		color:#24558f!important
+	}
+	.price
+	{
+		display: inline;
+	}
+	#order_review_heading
+	{
+		display: none;
+	}
+	#order_review,#order_review_heading
+	{
+		width: 100%;
+		float:left;
+		order:-1;
+	}
+	#customer_details
+	{
+		width: 100%;
+	}
+	.checkout.woocommerce-checkout
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.wc_payment_methods
+	{
+		display: none;
+	}
+	.woocommerce-checkout-review-order button
+	{
+		width: 400px;
+		background:#f36e24 !important;
+		height:77px;
+		line-height: 77px;
+		font-size: 34px;
+		border-radius:15px;
+		margin:0 auto;
+	}
+	.cart-subtotal,.woocommerce-checkout-review-order-table tbody,.woocommerce-checkout-review-order-table thead
+	{ 
+		display: none;
+	}
+	.place-order
+	{
+		text-align: center;
+	}
+	.added_to_cart
+	{
+		position: absolute;
+		bottom: 0;
+		width: fit-content;
+		white-space: nowrap;
+		left: 50%;
+		transform: translateX(-50%) translateY(100%);
+	}
+	.woocommerce table.cart td:nth-child(3)
+	{
+		color:#294a8e;
+	}
+	.woocommerce table.cart thead th
+	{
+		font-size:14px;
+		font-weight:bold;
+		color:#294a8e;
+	}
+	#order_review.uk-active #shipping_method li:first-child
+	{
+		display: none;
+	}
+	
+	#order_review.ju-active #shipping_method li:last-child
+	{
+		display: none;
+	}
+	#billing_country_field
+	{
+		display: none;
+	}
+	#mua_ngay
+	{
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: none;
+		transition: all 0.3s;
+	}
+	ul.products li:hover #mua_ngay
+	{
+		display: block;
+	}
+	.woocommerce button[name="update_cart"],
+.woocommerce input[name="update_cart"] {
+	display: none;
+}
+@media only screen and (max-width:1280px)
+{
+	#view_cart
+	{
+		left: 5px;
+	}
+}
+@media only screen and (max-width:1024px)
+{
+
+	.woocommerce input.input-text.qty
+	{
+		text-align: center;
+	}
+	.benhly
+	{
+		font-size:20px !important;
+	}
+	#table_form thead th
+	{
+		font-size: 14px;
+	}
+	.tm-header-mobile .uk-navbar-container
+	{
+		background:#294a8e;
+		 padding-bottom: 0;
+		
+	}
+	.uk-navbar-left
+	{
+		padding-top: 0 !important;
+		
+	}
+	
+	.tm-header-mobile .uk-navbar-nav > li > a
+	{
+		color:#FFF;
+		text-transform: uppercase;
+	}
+	.gridbenhly .el-title
+	{
+		font-size: 16px !important;
+	}
+	.gridbenhly .el-item  .uk-grid 
+	{
+		margin-left: -10px;
+	}
+	.gridbenhly .el-item  .uk-grid  > *
+	{
+		padding-left: 10px;
+	}
+	.gridbenhly .el-item  .uk-grid > div:first-child
+	{
+		width: 50%;
+	}
+	.gridbenhly .el-content
+	{
+		font-size: 11px !important;
+		margin-top: 0 !important;
+		max-height: 34px;
+		overflow: hidden;
+		display: none;
+	}
+	.gridbenhly .el-content + .uk-margin-top
+	{
+		margin-top: 10px !important;
+		
+	}
+	.tm-header-mobile .pointer
+	{
+		position: relative;
+	}
+	.tm-header-mobile .quality-1
+	{	
+		position: absolute;
+		background:#d00421;
+		color:#FFF;
+		width: 13px;
+		height: 13px;
+		left: 0;
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top:0;
+		border-radius: 50%;
+	}
+	.gridbenhly .el-content + .uk-margin-top .uk-button-small
+	{
+		font-size: 11.5px !important;
+	}
+
+	.gridbenhly  .el-meta
+	{
+		left: 0;
+		font-size: 11px !important;
+	}
+	.uk-navbar-center
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.tinhthanh
+	{
+		font-size: 18px;
+	}
+	.tinhthanh .uk-table-expand
+	{
+		min-width: 100px;
+	}
+	.tinhthanh td
+	{
+		padding:10px 5px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width:375px)
+{
+	#dathang tbody .gia
+	{
+		font-size: 14px !important;
+	}
+	#dathang input
+	{
+		width: 30px !important;
+	}
+
+	.tm-element-woo-add-to-cart .quantity .input-text
+	{
+		width: 45px !important;
+	}
+	.uk-navbar-nav>li>a
+	{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width:320px)
+{
+
+	.tm-header-mobile .uk-navbar-nav>li>a
+	{
+		font-size: 11px;
+	}
+}
