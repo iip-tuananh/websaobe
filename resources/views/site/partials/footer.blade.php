@@ -444,7 +444,7 @@
                     <div class="uk-width-1-1">
 
 
-                        <div class="uk-margin-remove-vertical uk-text-center" id="footer#10"> © 2022, Kutieskin All
+                        <div class="uk-margin-remove-vertical uk-text-center" id="footer#10"> © 2025, {{ $config->short_name_company }} All
                             Rights Reserved
                         </div>
                         <div class="uk-visible@m">
