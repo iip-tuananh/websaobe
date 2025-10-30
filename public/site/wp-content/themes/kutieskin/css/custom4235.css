@@ -106,7 +106,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	color:#294a8e;
-		
+
 }
 .term-list>:nth-child(n+2)
 {
@@ -128,7 +128,7 @@
 .term-list.uk-grid-collapse>.uk-grid-margin
 {
 	margin-top: 15px;
-	
+
 }
 .term_location
 {
@@ -268,7 +268,7 @@
 	border-radius: 5px;
 	padding-left: 5px;
 	padding-right: 0;
-	
+
 }
 #billing_phone_field
 {
@@ -316,9 +316,9 @@
 	-webkit-appearance: none;
 	margin: 0;
 	opacity: 0;
-	
+
 }
-.tm-element-woo-add-to-cart .quantity .input-text 
+.tm-element-woo-add-to-cart .quantity .input-text
 {
 	text-align: center;
 	width:63px !important;
@@ -372,7 +372,7 @@ ul.products>* .price
 ul.products>*  h2.woocommerce-loop-product__title
 {
 	font-size: 20px;
-	color: #24558f!important;
+	color: #f9b016!important;
 	font-weight: bold;
 }
 #button-cart .uk-button
@@ -382,7 +382,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 #button-cart .product_type_simple
 {
 	border-radius: 50px !important;
-	background:#24558f;
+	background:#f9b016;
 	color:#FFF;
 	padding:0 10px;
 }
@@ -395,7 +395,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 	.gia
 	{
 		font-size: 20px;
-		color:#24558f!important
+		color:#f9b016!important
 	}
 	.price
 	{
@@ -435,7 +435,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 		margin:0 auto;
 	}
 	.cart-subtotal,.woocommerce-checkout-review-order-table tbody,.woocommerce-checkout-review-order-table thead
-	{ 
+	{
 		display: none;
 	}
 	.place-order
@@ -465,7 +465,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 	{
 		display: none;
 	}
-	
+
 	#order_review.ju-active #shipping_method li:last-child
 	{
 		display: none;
@@ -517,14 +517,14 @@ ul.products>*  h2.woocommerce-loop-product__title
 	{
 		background:#294a8e;
 		 padding-bottom: 0;
-		
+
 	}
 	.uk-navbar-left
 	{
 		padding-top: 0 !important;
-		
+
 	}
-	
+
 	.tm-header-mobile .uk-navbar-nav > li > a
 	{
 		color:#FFF;
@@ -534,7 +534,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 	{
 		font-size: 16px !important;
 	}
-	.gridbenhly .el-item  .uk-grid 
+	.gridbenhly .el-item  .uk-grid
 	{
 		margin-left: -10px;
 	}
@@ -557,14 +557,14 @@ ul.products>*  h2.woocommerce-loop-product__title
 	.gridbenhly .el-content + .uk-margin-top
 	{
 		margin-top: 10px !important;
-		
+
 	}
 	.tm-header-mobile .pointer
 	{
 		position: relative;
 	}
 	.tm-header-mobile .quality-1
-	{	
+	{
 		position: absolute;
 		background:#d00421;
 		color:#FFF;

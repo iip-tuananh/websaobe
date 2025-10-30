@@ -67,7 +67,7 @@
         .woocommerce form .form-row .required { visibility: visible; }
     </style>
     <link href="/site/wp-content/themes/kutieskin/css/theme.11374.css?ver=1721792876" rel="stylesheet">
-    <link href="/site/wp-content/themes/kutieskin/css/custom4235.css?ver=4.4.5" rel="stylesheet">
+    <link href="/site/wp-content/themes/kutieskin/css/custom4235.css?ver=5.2.1" rel="stylesheet">
     <script type="text/javascript" src="/site/wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
     <script type="text/javascript" src="/site/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
     <script type="text/javascript" src="/site/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min4485.js?ver=2.7.0-wc.9.1.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
