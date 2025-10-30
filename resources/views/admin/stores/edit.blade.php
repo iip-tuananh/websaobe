@@ -1,15 +1,15 @@
 @extends('layouts.main')
 
 @section('title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa điểm bán
 @endsection
 
 @section('page_title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa điểm bán
 @endsection
 
 @section('title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa điểm bán
 @endsection
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>

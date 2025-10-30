@@ -92,7 +92,7 @@
         #footer\#10 {
             font-size: 12px;
             font-weight: bold;
-            color: #ffc81f;
+            color: #fff;
         }
 
         #footer\#11 .el-item > * {
@@ -436,7 +436,7 @@
     <div id="footer#12" class="uk-section-default">
         <div data-src="#" uk-img
              class="uk-background-norepeat uk-background-center-center uk-section uk-section-xsmall"
-             style="background-color: #1B396A;">
+             style="background-color: #48ACDC;">
 
 
             <div class="uk-container">
@@ -484,17 +484,17 @@
                                 <div>
                                     <div class="el-item uk-grid-item-match">
                                         <a class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-flex-stretch uk-link-toggle"
-                                           href="tel:18008179">
+                                           href="tel:{{ $config->hotline }}">
                                             <div class="uk-grid-column-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto uk-flex-center">
 
 
                                                     <picture>
                                                         <source type="image/webp"
-                                                                srcset="/wp-content/themes/yootheme/cache/1b/call2-1b522f4e.webp 21w"
+                                                                srcset="/site/img/call2-1b522f4e.webp 21w"
                                                                 sizes="(min-width: 21px) 21px">
                                                         <img
-                                                            src="wp-content/themes/yootheme/cache/2a/call2-2a10936b.png"
+                                                            src="/site/img/call2-2a10936b.png"
                                                             width="21" height="22" alt loading="lazy"
                                                             class="el-image">
                                                     </picture>
@@ -505,7 +505,7 @@
 
 
                                                     <h5 class="el-title uk-h3 uk-text-muted uk-margin-top uk-margin-remove-bottom">
-                                                        18008179 </h5>
+                                                        {{ $config->hotline }} </h5>
 
 
                                                 </div>
@@ -516,17 +516,17 @@
                                 <div>
                                     <div class="el-item uk-grid-item-match">
                                         <a class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-flex-stretch uk-link-toggle"
-                                           href="dat-hang.html">
+                                           href="{{ route('cart.index') }}">
                                             <div class="uk-grid-column-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto uk-flex-center">
 
 
                                                     <picture>
                                                         <source type="image/webp"
-                                                                srcset="/wp-content/themes/yootheme/cache/95/cart11-95c75c13.webp 29w"
+                                                                srcset="/site/img/cart11-95c75c13.webp 29w"
                                                                 sizes="(min-width: 29px) 29px">
                                                         <img
-                                                            src="wp-content/themes/yootheme/cache/e4/cart11-e486b5f8.png"
+                                                            src="/site/img/cart11-e486b5f8.png"
                                                             width="29" height="27" alt loading="lazy"
                                                             class="el-image">
                                                     </picture>
@@ -548,17 +548,17 @@
                                 <div>
                                     <div class="el-item uk-grid-item-match">
                                         <a class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-flex-stretch uk-link-toggle"
-                                           href="diem-ban.html">
+                                           href="{{ route('front.getStores') }}">
                                             <div class="uk-grid-column-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto uk-flex-center">
 
 
                                                     <picture>
                                                         <source type="image/webp"
-                                                                srcset="/wp-content/themes/yootheme/cache/1a/diemban1-1a80bf8a.webp 15w"
+                                                                srcset="/site/img/diemban1-1a80bf8a.webp 15w"
                                                                 sizes="(min-width: 15px) 15px">
                                                         <img
-                                                            src="wp-content/themes/yootheme/cache/84/diemban1-84d26ce6.png"
+                                                            src="/site/img/diemban1-84d26ce6.png"
                                                             width="15" height="30" alt loading="lazy"
                                                             class="el-image">
                                                     </picture>

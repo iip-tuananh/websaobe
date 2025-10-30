@@ -89,15 +89,23 @@
                             <ul class="uk-breadcrumb uk-margin-remove-bottom" vocab="https://schema.org/"
                                 typeof="BreadcrumbList">
 
-                                <li property="itemListElement" typeof="ListItem"><a href="index.html" property="item"
+                                <li property="itemListElement" typeof="ListItem"><a href="{{ route('front.home-page') }}" property="item"
                                                                                     typeof="WebPage"><span
-                                            property="name">Tổng quan</span></a>
+                                            property="name">Trang chủ</span></a>
                                     <meta property="position" content="1">
                                 </li>
-                                <li property="itemListElement" typeof="ListItem"><span property="name"
-                                                                                       aria-current="page">Tin nhãn hàng</span>
-                                    <meta property="position" content="2">
-                                </li>
+                                @if($category)
+                                    <li property="itemListElement" typeof="ListItem"><span property="name"
+                                                                                           aria-current="page">{{ $category->name }}</span>
+                                        <meta property="position" content="2">
+                                    </li>
+                                @else
+                                    <li property="itemListElement" typeof="ListItem"><span property="name"
+                                                                                           aria-current="page">Tin tức</span>
+                                        <meta property="position" content="2">
+                                    </li>
+                                @endif
+
                             </ul>
                         </nav>
 

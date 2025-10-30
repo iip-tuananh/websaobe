@@ -146,7 +146,7 @@ request()->is('admin/categories') || request()->is('admin/categories*') || reque
 
 
             <li class="nav-item has-treeview  {{ request()->is('admin/stores') ||  request()->is('admin/banner-page') ||  request()->is('admin/channels')
-||  request()->is('admin/banners') || request()->is('admin/orders') || request()->is('admin/reviews') || request()->is('admin/policies/*') || request()->is('admin/policies')
+||  request()->is('admin/banners') || request()->is('admin/orders') || request()->is('admin/reviews') || request()->is('admin/stores/*') || request()->is('admin/stores')
 || request()->is('admin/contacts') ? 'menu-open' : '' }} ">
 
                 <a href="#" class="nav-link">
@@ -161,6 +161,13 @@ request()->is('admin/categories') || request()->is('admin/categories*') || reque
                         <a href="{{ route('channels.index') }}" class="nav-link {{ Request::routeIs('channels.index') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
                             <p>Danh mục đối tác</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('stores.index') }}" class="nav-link {{ Request::routeIs('stores.index') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh mục điểm bán</p>
                         </a>
                     </li>
 

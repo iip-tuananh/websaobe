@@ -90,7 +90,7 @@
 
                             <ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2963 current_page_item uk-active">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2963 current_page_item ">
                                     <a href="{{ route('front.home-page') }}"> Trang chủ</a></li>
 
                                 @foreach($categories as $category)
@@ -172,7 +172,7 @@
 
                         <ul class="uk-navbar-nav">
 
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2963 current_page_item uk-active">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  page_item page-item-2963 current_page_item ">
                                 <a href="{{ route('front.home-page') }}"> Trang chủ</a></li>
 
                             @foreach($categories as $cate)

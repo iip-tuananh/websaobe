@@ -1,15 +1,15 @@
 @extends('layouts.main')
 
 @section('title')
-    Thêm mới đơn vị thành viên
+    Thêm mới điểm bán
 @endsection
 
 @section('page_title')
-    Thêm mới đơn vị thành viên
+    Thêm mới điểm bán
 @endsection
 
 @section('title')
-    Thêm mới đơn vị thành viên
+    Thêm mới điểm bán
 @endsection
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>

@@ -402,8 +402,8 @@
         </div>
         <div id="page#8" class="uk-section-default">
             <div style="background-size: 563px 163px; background-color: #C8EDFF;"
-                 data-src="/wp-content/uploads/2022/09/dammay-e1662628382833.png"
-                 data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;\/wp-content\/themes\/yootheme\/cache\/1e\/dammay-e1662628382833-1e6ec0a9.webp 563w&quot;,&quot;sizes&quot;:&quot;(min-width: 563px) 563px&quot;}]"
+                 data-src="/site/img/dammay-e1662628382833.png"
+                 data-sources="[{&quot;type&quot;:&quot;image\/webp&quot;,&quot;srcset&quot;:&quot;/site/img/dammay-e1662628382833-1e6ec0a9.webp 563w&quot;,&quot;sizes&quot;:&quot;(min-width: 563px) 563px&quot;}]"
                  uk-img class="uk-background-norepeat uk-background-top-right uk-section uk-padding-remove-bottom">
 
 

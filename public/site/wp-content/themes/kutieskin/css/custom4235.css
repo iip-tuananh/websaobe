@@ -372,7 +372,7 @@ ul.products>* .price
 ul.products>*  h2.woocommerce-loop-product__title
 {
 	font-size: 20px;
-	color: #f9b016!important;
+	color: #24558f!important;
 	font-weight: bold;
 }
 #button-cart .uk-button
@@ -382,7 +382,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 #button-cart .product_type_simple
 {
 	border-radius: 50px !important;
-	background:#f9b016;
+	background:#24558f;
 	color:#FFF;
 	padding:0 10px;
 }
@@ -395,7 +395,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 	.gia
 	{
 		font-size: 20px;
-		color:#f9b016!important
+		color:#24558f!important
 	}
 	.price
 	{
@@ -515,7 +515,7 @@ ul.products>*  h2.woocommerce-loop-product__title
 	}
 	.tm-header-mobile .uk-navbar-container
 	{
-		background:#294a8e;
+		background:#48ACDC;
 		 padding-bottom: 0;
 
 	}

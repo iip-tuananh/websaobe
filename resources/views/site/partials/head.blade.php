@@ -66,7 +66,7 @@
     <style id='woocommerce-inline-inline-css' type='text/css'>
         .woocommerce form .form-row .required { visibility: visible; }
     </style>
-    <link href="/site/wp-content/themes/kutieskin/css/theme.11374.css?ver=1721792876" rel="stylesheet">
+    <link href="/site/wp-content/themes/kutieskin/css/theme.11374.css?ver=2821792876" rel="stylesheet">
     <link href="/site/wp-content/themes/kutieskin/css/custom4235.css?ver=5.2.1" rel="stylesheet">
     <script type="text/javascript" src="/site/wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
     <script type="text/javascript" src="/site/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
@@ -107,7 +107,7 @@
         }
         .uk-navbar-right .uk-navbar-nav li:last-child
         {
-            background:#e18813;
+            background:#f9b016;
             border-radius:20px;
         }
         .tm-header-placeholder
@@ -140,7 +140,7 @@
         }
         .uk-navbar-right .uk-navbar-nav li
         {
-            background:#294a8e;
+            background:#48ACDC;
             border-radius:20px;
 
         }
@@ -160,7 +160,7 @@
         }
         .tuvan
         {
-            color:#294a8e;
+            color:#48ACDC;
         }
         .tuvan strong
         {
@@ -177,7 +177,7 @@
         }
         .uk-navbar-dropdown-nav a
         {
-            background:#294a8e;
+            background:#48ACDC;
             text-transform:uppercase;
         }
         .uk-navbar-dropdown-nav li
@@ -186,7 +186,7 @@
         }
         .uk-navbar-dropdown-nav .uk-active a
         {
-            background-color: #e18813;
+            background-color: #f9b016;
         }
         .uk-lightbox-items > *
         {
