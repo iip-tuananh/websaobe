@@ -250,7 +250,8 @@ class CartController extends Controller
 
 
             $lastId = Order::query()->latest('id')->first()->id ?? 1;
-            $total_price = \Cart::getTotal();
+            $cartList  = \Cart::session('cartList');
+            $total_price = $cartList->getTotal();
 
             $order = Order::query()->create([
                 'customer_name' => $request->name,

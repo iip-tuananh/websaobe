@@ -9,6 +9,7 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/tin-tuc/{slug?}','FrontController@blogs')->name('front.blogs');
     Route::get('/chi-tiet-tin-tuc/{slug}','FrontController@blogDetail')->name('front.blogDetail');
     Route::get('/gioi-thieu','FrontController@abouts')->name('front.abouts');
+    Route::get('/dat-hang','FrontController@order')->name('front.order');
 
     Route::get('/chinh-sach/{slug}','FrontController@getPolicy')->name('front.getPolicy');
     Route::get('/diem-ban/{proSlug?}/{distSlug?}','FrontController@getStores')->name('front.getStores');

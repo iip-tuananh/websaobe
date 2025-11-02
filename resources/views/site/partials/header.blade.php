@@ -98,9 +98,9 @@
                                         <a href='#' class='ju-scroll'><span uk-nav-parent-icon></span></a>
                                         <div><a href="{{ route('front.getProductList', $category->slug) }}"> {{ $category->name }}</a></div>
                                         <ul class="uk-nav-sub">
-                                            @foreach($category->childs as $child)
+                                            @foreach($category->products as $product)
                                                 <li class="menu-item menu-item-type-post_type menu-item-object-product"><a
-                                                        href="{{ route('front.getProductList', $child->slug) }}">{{ $child->name }}</a></li>
+                                                        href="{{ route('front.getProductDetail', $product->slug) }}">{{ $product->name }}</a></li>
                                             @endforeach
 
                                         </ul>
@@ -115,7 +115,7 @@
 
 
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#!"> Đặt hàng</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ route('front.order') }}"> Đặt hàng</a></li>
                                 <li class="menu-item menu-item-type-post_type_archive menu-item-object-dia-diem"><a
                                         href="{{ route('front.getStores') }}">
                                         <picture>
@@ -178,14 +178,14 @@
                             @foreach($categories as $cate)
                                 <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-has-children uk-parent">
                                     <a href="{{ route('front.getProductList', $cate->slug) }}"> {{ $cate->name }}</a>
-                                    @if($cate->childs()->count() > 0)
+                                    @if($cate->products()->count() > 0)
                                         <div class="uk-navbar-dropdown">
                                             <div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid>
                                                 <div>
                                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                        @foreach($cate->childs as $child)
+                                                        @foreach($cate->products as $product)
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                                                                <a href="{{ route('front.getProductList', $child->slug) }}">{{ $child->name }}</a></li>
+                                                                <a href="{{ route('front.getProductDetail', $product->slug) }}">{{ $product->name }}</a></li>
                                                         @endforeach
                                                     </ul>
                                                 </div>
@@ -196,25 +196,13 @@
                                 </li>
                             @endforeach
 
-                            <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-has-children uk-parent">
-                                <a href="{{ route('front.blogs') }}">Tin tức</a>
-
-                                    <div class="uk-navbar-dropdown">
-                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid>
-                                            <div>
-                                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                    @foreach($postsCategory as $postCategory)
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                                                            <a href="{{ route('front.blogs', $postCategory->slug) }}">{{ $postCategory->name }}</a></li>
-                                                    @endforeach
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
 
 
-                            </li>
-
+                            @foreach($postsCategory as $postCategory)
+                                <li class="menu-item menu-item-type-post_type_archive menu-item-object-product menu-item-has-children uk-parent">
+                                    <a href="{{ route('front.blogs', $postCategory->slug) }}">{{ $postCategory->name }}</a>
+                                </li>
+                            @endforeach
 
                         </ul>
 
@@ -227,7 +215,7 @@
 
                         <ul class="uk-navbar-nav">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="#!"> Đặt hàng</a></li>
+                                    href="{{ route('front.order') }}"> Đặt hàng</a></li>
                             <li class="menu-item menu-item-type-post_type_archive menu-item-object-dia-diem"><a
                                     href="{{ route('front.getStores') }}" class="uk-preserve-width">
                                     <picture>

@@ -459,6 +459,13 @@ class FrontController extends Controller
         return view('site.about_us', compact('banner'));
     }
 
+    public function order(Request $request) {
+        $products = Product::query()->where('status', 1)->latest()->get();
+        $banner = Banner::query()->with('image')->where('type',7)->first();
+
+        return view('site.order', compact('banner', 'products'));
+    }
+
     public function contact(Request $request) {
         $config = Config::query()->find(1);
         $banner = Banner::query()->with('image')->where('type',3)->first();
@@ -1654,6 +1661,12 @@ class FrontController extends Controller
     }
 
     public function clearData() {
-        File::query()->where('model_type', About::class)->delete();
+        $obj = new Banner();
+        $obj->title = 'Banner trang đặt hàng';
+        $obj->created_by = 1;
+        $obj->updated_by = 1;
+        $obj->type = 7;
+        $obj->save();
+
     }
 }

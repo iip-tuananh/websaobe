@@ -124,51 +124,130 @@
                     <div class="uk-width-expand@m">
 
 
+{{--                        <div id="template-oFhJ4BUx#0" class="uk-margin">--}}
+{{--                            <div--}}
+{{--                                class="uk-grid uk-child-width-1-1 uk-child-width-1-2@m uk-grid-column-medium uk-grid-match"--}}
+{{--                                uk-grid>--}}
+{{--                                @foreach($blogs as $blog)--}}
+{{--                                    <div>--}}
+{{--                                        <div class="el-item uk-grid-item-match">--}}
+{{--                                            <a class="uk-panel uk-margin-remove-first-child uk-link-toggle"--}}
+{{--                                               href="{{ route('front.blogDetail', $blog->slug) }}">--}}
+
+
+{{--                                                <picture>--}}
+{{--                                                    <source type="image/webp"--}}
+{{--                                                            srcset="{{ $blog->image->path ?? '' }} 395w,--}}
+{{--                                                             {{ $blog->image->path ?? '' }} 768w,--}}
+{{--                                                             {{ $blog->image->path ?? '' }} 790w"--}}
+{{--                                                            sizes="(min-width: 395px) 395px">--}}
+{{--                                                    <img decoding="async"--}}
+{{--                                                         src="{{ $blog->image->path ?? '' }}"--}}
+{{--                                                         width="395" height="263" alt loading="lazy" class="el-image">--}}
+{{--                                                </picture>--}}
+
+
+{{--                                                <h3 class="el-title uk-text-primary uk-margin-top uk-margin-remove-bottom">--}}
+{{--                                                    {{ $blog->name }} </h3>--}}
+{{--                                                <div class="el-meta uk-text-meta"> {{ \Illuminate\Support\Carbon::parse($blog->created_at)->format('d/m/Y') }}</div>--}}
+
+
+{{--                                                <div class="el-content uk-panel uk-margin-small-top">--}}
+{{--                                                    {{ $blog->intro }}--}}
+{{--                                                </div>--}}
+
+{{--                                                <div class="uk-margin-small-top">--}}
+{{--                                                    <div class="el-link uk-button uk-button-secondary uk-button-small">Xem--}}
+{{--                                                        ngay--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+
+
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                @endforeach--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+
+                        <style>
+                            /* Giới hạn phạm vi theo id template */
+                            #template-oFhJ4BUx\#0 .blog-thumb{
+                                aspect-ratio: 4 / 3;        /* giữ tỷ lệ ảnh */
+                                border-radius: 8px;
+                                overflow: hidden;
+                            }
+                            #template-oFhJ4BUx\#0 .blog-thumb img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                display: block;
+                            }
+
+                            /* Intro clamp 3 dòng */
+                            #template-oFhJ4BUx\#0 .blog-intro{
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 3;
+                                overflow: hidden;
+                            }
+                            @supports (line-clamp: 3) {
+                                #template-oFhJ4BUx\#0 .blog-intro { line-clamp: 3; }
+                            }
+
+                            /* Khoảng cách dọc giữa các item (đã có uk-grid-row-medium, nhưng thêm tí padding nếu thích) */
+                            #template-oFhJ4BUx\#0 .blog-row{
+                                padding: 4px 0;
+                            }
+
+                        </style>
                         <div id="template-oFhJ4BUx#0" class="uk-margin">
                             <div
-                                class="uk-grid uk-child-width-1-1 uk-child-width-1-2@m uk-grid-column-medium uk-grid-match"
+                                class="uk-grid uk-child-width-1-1 uk-grid-row-medium uk-grid-match"
                                 uk-grid>
                                 @foreach($blogs as $blog)
                                     <div>
-                                        <div class="el-item uk-grid-item-match">
-                                            <a class="uk-panel uk-margin-remove-first-child uk-link-toggle"
-                                               href="{{ route('front.blogDetail', $blog->slug) }}">
-
-
-                                                <picture>
-                                                    <source type="image/webp"
-                                                            srcset="{{ $blog->image->path ?? '' }} 395w,
-                                                             {{ $blog->image->path ?? '' }} 768w,
-                                                             {{ $blog->image->path ?? '' }} 790w"
-                                                            sizes="(min-width: 395px) 395px">
-                                                    <img decoding="async"
-                                                         src="{{ $blog->image->path ?? '' }}"
-                                                         width="395" height="263" alt loading="lazy" class="el-image">
-                                                </picture>
-
-
-                                                <h3 class="el-title uk-text-primary uk-margin-top uk-margin-remove-bottom">
-                                                    {{ $blog->name }} </h3>
-                                                <div class="el-meta uk-text-meta"> {{ \Illuminate\Support\Carbon::parse($blog->created_at)->format('d/m/Y') }}</div>
-
-
-                                                <div class="el-content uk-panel uk-margin-small-top">
-                                                    {{ $blog->intro }}
-                                                </div>
-
-                                                <div class="uk-margin-small-top">
-                                                    <div class="el-link uk-button uk-button-secondary uk-button-small">Xem
-                                                        ngay
+                                        <a class="uk-link-toggle" href="{{ route('front.blogDetail', $blog->slug) }}">
+                                            <div class="uk-grid-small uk-flex-middle blog-row" uk-grid>
+                                                <!-- Cột ảnh -->
+                                                <div class="uk-width-1-1 uk-width-1-3@m">
+                                                    <div class="blog-thumb">
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                    srcset="{{ $blog->image->path ?? '' }} 395w,
+                              {{ $blog->image->path ?? '' }} 768w,
+                              {{ $blog->image->path ?? '' }} 790w"
+                                                                    sizes="(min-width: 960px) 33vw, 100vw">
+                                                            <img decoding="async"
+                                                                 src="{{ $blog->image->path ?? '' }}"
+                                                                 alt="{{ $blog->name }}"
+                                                                 loading="lazy">
+                                                        </picture>
                                                     </div>
                                                 </div>
 
+                                                <!-- Cột nội dung -->
+                                                <div class="uk-width-1-1 uk-width-expand@m">
+                                                    <h3 class="el-title uk-text-primary uk-margin-remove-bottom">
+                                                        {{ $blog->name }}
+                                                    </h3>
+                                                    <div class="el-meta uk-text-meta uk-margin-xsmall-top">
+                                                        {{ \Illuminate\Support\Carbon::parse($blog->created_at)->format('d/m/Y') }}
+                                                    </div>
 
-                                            </a>
-                                        </div>
+                                                    <div class="blog-intro uk-margin-small-top">
+                                                        {{ $blog->intro }}
+                                                    </div>
+
+                                                    <div class="uk-margin-small-top">
+                                                        <span class="el-link uk-button uk-button-secondary uk-button-small">Xem ngay</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 @endforeach
-
-
 
                             </div>
                         </div>

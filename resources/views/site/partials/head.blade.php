@@ -140,7 +140,7 @@
         }
         .uk-navbar-right .uk-navbar-nav li
         {
-            background:#48ACDC;
+            background:#0856A6;
             border-radius:20px;
 
         }
@@ -160,7 +160,7 @@
         }
         .tuvan
         {
-            color:#48ACDC;
+            color:#0856A6;
         }
         .tuvan strong
         {
@@ -177,7 +177,7 @@
         }
         .uk-navbar-dropdown-nav a
         {
-            background:#48ACDC;
+            background:#0856A6;
             text-transform:uppercase;
         }
         .uk-navbar-dropdown-nav li

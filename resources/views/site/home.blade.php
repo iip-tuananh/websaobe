@@ -587,9 +587,19 @@
         @endforeach
 
 
+        <style>
+                .bg-sky{
+                    background-image:
+                        radial-gradient(120px 80px at 70% 25%, rgba(255,255,255,.45), transparent 60%),
+                        radial-gradient(140px 90px at 20% 35%, rgba(255,255,255,.35), transparent 65%),
+                        linear-gradient(to top, #FFD43B 0%, #FBE47A 32%, #EAF8FF 62%, #C8EDFF 100%);
+                }
+        </style>
+
         <div class="uk-panel uk-section-default">
-            <div data-src="#" uk-img class="uk-background-norepeat uk-background-center-center uk-section"
-                 style="background-color: #C8EDFF;">
+{{--            <div data-src="#" uk-img class="uk-background-norepeat uk-background-center-center uk-section"--}}
+{{--                 style="background-color: color-mix(in srgb, #FFD43B 55%, #C8EDFF 45%);">--}}
+                <div class="uk-section uk-background-norepeat uk-background-center-center bg-sky">
 
 
                 <div class="uk-margin-remove-vertical uk-container uk-container-small">

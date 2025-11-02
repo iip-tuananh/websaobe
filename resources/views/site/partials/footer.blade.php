@@ -142,17 +142,25 @@
                 padding-bottom: 40px;
             }
         }</style>
-    <div id="footer#3" class="datmua uk-section-default uk-section">
 
+    @unless (Route::is('front.order'))
 
+        <style>
+            .bg-sky-footer{
+                background-image:
+                    radial-gradient(120px 80px at 70% 25%, rgba(255,255,255,.45), transparent 60%),
+                    radial-gradient(140px 90px at 20% 35%, rgba(255,255,255,.35), transparent 65%),
+
+                    linear-gradient(to bottom, #FFD43B 0%, #FBE47A 32%, #EAF8FF 62%, #C8EDFF 100%);
+            }
+        </style>
+
+    <div id="footer#3" class="datmua uk-section-default uk-section bg-sky-footer">
         <div class="uk-container">
             <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
+
                 <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
-
-
                     <div class="uk-panel uk-width-1-1">
-
-
                         <div class="uk-heading-bullet uk-text-primary" id="footer#0"> Đặt mua {{ $config->short_name_company }}</div>
                         <div class="uk-margin uk-hidden@s">
                             <picture>
@@ -295,16 +303,14 @@
                             </script>
 
                             <div class="uk-text-center">
-                                <button class="uk-button uk-button-secondary" ng-click="submitOrder()" class=""><span
+                                <button class="uk-button uk-button-secondary" ng-click="submitOrder()" class="" ><span
                                         uk-icon="cart"></span> Đặt hàng
                                 </button>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
+
                 <div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m uk-visible@s">
 
 
@@ -332,9 +338,10 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
+    @endunless
+
     <div class="uk-section-secondary uk-section uk-section-small">
 
 
@@ -358,10 +365,10 @@
                             <div class="uk-width-1-2@s uk-width-1-2@m">
 
 
-                                <h5 class="uk-text-uppercase uk-text-bold" id="footer#5">{{ $config->web_title }}<br/>
+                                <h5 class="uk-text-uppercase uk-text-bold" id="footer#5" style="color: #0458A8">{{ $config->web_title }}<br/>
                                     <hr/>
                                 </h5>
-                                <div class="uk-panel uk-margin-remove-vertical uk-text-justify" id="footer#6">
+                                <div class="uk-panel uk-margin-remove-vertical uk-text-justify" id="footer#6" style="color: #0458A8">
                                   {{ $config->introduction }}
                                 </div>
 
@@ -372,15 +379,15 @@
                             <div class="uk-width-1-2@s uk-width-1-2@m">
 
 
-                                <h5 class="uk-text-uppercase uk-text-bold" id="footer#7"> Danh mục <br/>
+                                <h5 class="uk-text-uppercase uk-text-bold" id="footer#7" style="color: #0458A8"> Danh mục <br/>
                                     <hr/>
                                 </h5>
-                                <div class="uk-panel uk-margin" id="footer#8">
+                                <div class="uk-panel uk-margin" id="footer#8" style="color: #0458A8">
                                     <ul>
-                                        <li><a href="{{ route('front.home-page') }}">Trang chủ</a></li>
+                                        <li style="color: #0458A8"><a href="{{ route('front.home-page') }}" style="color: #0458A8">Trang chủ</a></li>
 
                                     @foreach($categories as $cate)
-                                            <li><a href="{{ route('front.getProductList', $cate->slug) }}">{{ $cate->name }}</a></li>
+                                            <li style="color: #0458A8"><a href="{{ route('front.getProductList', $cate->slug) }}" style="color: #0458A8">{{ $cate->name }}</a></li>
                                         @endforeach
 
                                     </ul>
@@ -436,7 +443,7 @@
     <div id="footer#12" class="uk-section-default">
         <div data-src="#" uk-img
              class="uk-background-norepeat uk-background-center-center uk-section uk-section-xsmall"
-             style="background-color: #48ACDC;">
+             style="background-color: #0458A8;">
 
 
             <div class="uk-container">
@@ -516,7 +523,7 @@
                                 <div>
                                     <div class="el-item uk-grid-item-match">
                                         <a class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-flex-stretch uk-link-toggle"
-                                           href="{{ route('cart.index') }}">
+                                           href="{{ route('front.order') }}">
                                             <div class="uk-grid-column-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto uk-flex-center">
 

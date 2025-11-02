@@ -23,8 +23,45 @@ class HeaderComposer
         $totalPriceCart = \Cart::session('cartList')->getTotal();
 
         // danh mục sản phẩm
-        $categories = Category::query()->with('childs')->where('parent_id', 0)
-            ->orderBy('sort_order')->get();
+        $categories = Category::query()
+            ->with(['childs:id,parent_id'])
+            ->where('parent_id', 0)
+            ->orderBy('sort_order')
+            ->get(['id','sort_order','name']);
+
+        $cateIdToParent = [];
+        $parentToCateIds = [];
+
+        foreach ($categories as $cat) {
+            $ids = $cat->childs->pluck('id')->all();
+            $ids = array_merge([$cat->id], $ids);
+
+            $parentToCateIds[$cat->id] = $ids;
+            foreach ($ids as $cid) {
+                $cateIdToParent[$cid] = $cat->id;
+            }
+        }
+
+        $allCateIds = array_keys($cateIdToParent);
+
+        $products = Product::query()
+            ->where('status', 1)
+            ->whereIn('cate_id', $allCateIds)
+            ->latest()
+            ->get(['id','name','slug','cate_id']);
+
+        $grouped = [];
+        foreach ($products as $p) {
+            if (isset($cateIdToParent[$p->cate_id])) {
+                $pid = $cateIdToParent[$p->cate_id];
+                $grouped[$pid][] = $p;
+            }
+        }
+
+        foreach ($categories as $cat) {
+            $cat->setRelation('products', collect($grouped[$cat->id] ?? []));
+        }
+
 
         // danh mục blog
         $postsCategory = PostCategory::query()

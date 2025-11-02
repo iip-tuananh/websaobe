@@ -4242,8 +4242,8 @@ select.uk-form-width-xsmall {
 }
 
 .uk-button-secondary {
-    background-color: #ed9718;
-    color: #fff;
+    background-color: #FFD43B;
+    color: #181111;
     border: 1px solid transparent
 }
 
@@ -4462,7 +4462,7 @@ select.uk-form-width-xsmall {
 
 .uk-section-secondary {
     --uk-inverse: light;
-    background: #f9b016
+    background: #FFD43B
 }
 
 .uk-container {
@@ -6966,7 +6966,7 @@ ul.uk-nav-sub {
 
 .uk-navbar-nav > li > a {
     padding: 0 15px;
-    color: #f9b016;
+    color: #0458A8;
     transition: .1s ease-in-out;
     transition-property: color, background-color, border-color, box-shadow;
     font-weight: 700
